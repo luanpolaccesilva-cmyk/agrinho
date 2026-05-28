@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e2f0d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#jogo-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+#painel {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#fazenda {
+    width: 100%;
+    height: 200px;
+    background-color: #c2e1b9;
+    border: 2px dashed #87a96b;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para as pragas que vão aparecer */
+.praga {
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    animation: tremer 0.5s infinite alternate;
+}
+
+@keyframes tremer {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
+}
